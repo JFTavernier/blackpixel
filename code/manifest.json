@@ -1,0 +1,29 @@
+{
+    "name": "Black Pixels",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Internet have a cost",
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_title": "Black Pixels"
+    },
+    "icons": {
+      "48": "icons/icon48.png",
+     "128": "icons/icon128.png" 
+    },
+    "permissions": [
+      "https://*/*",
+      "http://*/*",
+      "<all_urls>",
+      "tabs",
+      "storage"
+    ],
+    "chrome_url_overrides":{
+      "newtab":"newtab.html"
+    }
+  }
